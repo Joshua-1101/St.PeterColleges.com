@@ -1,1 +1,1 @@
-# St.PeterColleges.com
+# St. Peter Colleges.com
