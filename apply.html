@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="stpeterlogo.png" alt="St. Peter Colleges" width="190px" style="border: 5px solid white;padding: 3px;margin: 5px;border-radius: 380px;background-color: white;display: flex;flex-wrap: nowrap;">
+        </div>
+        <h1>Application Form</h1>
+        
+    </header>
+    <button class="back-button" onclick="goBack()">↩</button>
+   <main>
+    <form onsubmit="return checkCompatibility()">
+        
+        <div class="form-control">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+        </div>
+
+        <div class="form-control">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+        </div>
+
+        <div class="form-control">
+            <label for="mi">Middle Initial:</label>
+            <input type="text" id="mi" name="mi" maxlength="1" required>
+        </div>
+      
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+      
+        <div class="form-control">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-control">
+            <label for="strand">Strand during SHS:</label>
+            <select id="strand" name="strand">
+                <option value="">--Select--</option>
+                <option value="STEM">STEM</option>
+                <option value="ABM">ABM</option>
+                <option value="HUMSS">HUMSS</option>
+                <option value="GAS">GAS</option>
+                <option value="TVL/ICT">TVL/ICT</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">--Select Course--</option>
+                <option value="BSIT">Bachelor of Science in Information Technology (BSIT)</option>
+                <option value="BSCS">Bachelor of Science in Computer Science (BSCS)</option>
+                <option value="BSIS">Bachelor of Science in Information Systems (BSIS)</option>
+                <option value="BSCE">Bachelor of Science in Computer Engineering (BSCE)</option>
+                <option value="BSA">Bachelor of Science in Agriculture (BSA)</option>
+            </select>
+        </div>
+      
+        <input class="sub" type="submit" value="Submit">
+      </form>
+   </main>
+   
+
+      <footer>
+		<p style="align-items: center;">&copy; St. Peter Colleges 2023</p>
+	</footer>
+      <script src="apply.js"></script>
+</body>
+</html>
